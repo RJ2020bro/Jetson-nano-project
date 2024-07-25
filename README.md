@@ -8,7 +8,7 @@ The algorithm of sorting the blood cells works by first being trained by being s
 class. After the AI knows what class images correspond to, the AI can be shown a new set of images, and will label them by class from their pre-trained knowledge. The images and output can then be exported. This project started at 50% accuracy and after about 70 epoches, it has reached about 99 percent accuracy.
 ## How To Run The Project 
 1. Clone the jetson-inference project from GitHub using "git clone --recursive https://github.com/dusty-nv/jetson-inference" and change directories into it
-2. Pull the code from this repository.
+2. Pull the code from this repository and download the model from this google drive link https://drive.google.com/drive/u/0/folders/1CbfNitQdxx1i2L4O-AUhwghe9AI5nhpf 
 3. Put it in 'jetson-inference/python/training/classification' directory.
 4. Set `NET=models/Run1` and `DATASET=data/Original`
 5. Run the command `imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/NAME_OF_CLASS_FOLDER/NAME_OF_PG_TO_CLASSIFY DESIRED_NAME_OF_YOUR_OUTPUT`
