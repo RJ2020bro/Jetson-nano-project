@@ -11,6 +11,6 @@ class. After the AI knows what class images correspond to, the AI can be shown a
 2. Pull the code from this repository.
 3. Put it in jetson-inference/python/training/classification directory.
 4. Set NET=models/Run1 and DATASET=data/Original
-5. Run the command imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/NAME OF CLASS FOLDER/NAME OF JPG TO CLASSIFY DESIRED NAME OF YOUR OUTPUT
+5. Run the command imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/NAME_OF_CLASS_FOLDER/NAME_OF_PG_TO_CLASSIFY DESIRED_NAME_OF_YOUR_OUTPUT
 6. If you want to add your own leukemia blood smear, add it to directory under test directory and edit the command in line 5 accordingly.
 7. The class of your image will appear in your terminal after running and it will also be labeled on your image. YIPEE
